@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Primary Meta Tags -->
+    <title>portokudev — Engineering with Intent</title>
+    <meta name="title" content="portokudev — Engineering with Intent">
+    <meta name="description"
+        content="Software Engineer & UI/UX Designer specializing in high-performance digital products. AI-augmented workflow. Precision code. Strategic design.">
+    <meta name="keywords"
+        content="portofolio, developer, designer, software engineer, web developer, portokudev, portfolio">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://portokudev.my.id">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://portokudev.my.id">
+    <meta property="og:title" content="portokudev — Engineering with Intent">
+    <meta property="og:description"
+        content="Software Engineer & UI/UX Designer specializing in high-performance digital products. AI-augmented workflow. Precision code. Strategic design.">
+    <meta property="og:image" content="https://portokudev.my.id/assets/images/logo.png">
+
+    <!-- JSON-LD Structured Data for Fast Google Indexing -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "portokudev",
+      "url": "https://portokudev.my.id",
+      "logo": "https://portokudev.my.id/assets/images/logo.png",
+      "image": "https://portokudev.my.id/assets/images/profile.jpg",
+      "description": "Portofolio profesional Developer & Designer dengan pendekatan AI-Powered Workflow.",
+      "sameAs": [
+        "https://github.com/Cyberstarszs",
+        "https://www.instagram.com/x.shybb/"
+      ],
+      "knowsAbout": [
+        "Software Engineering",
+        "UI/UX Design",
+        "Web Development",
+        "Mobile App Development",
+        "AI Integrations"
+      ]
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/favicon.png">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Immediate Theme Initialization to prevent flashing -->
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+                document.body.classList.add('dark-mode');
+            } else {
+                document.body.classList.add('light-mode');
+            }
+        })();
+    </script>
+    <!-- Premium Preloader / Splash Screen -->
+    <div id="splash-screen" class="splash-screen">
+        <div class="splash-content">
+            <!-- Glowing Icons Row -->
+            <div class="splash-icons">
+                <div class="splash-icon-wrapper">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                </div>
+                <div class="splash-icon-wrapper">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </div>
+                <div class="splash-icon-wrapper">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Welcome Texts -->
+            <h1 class="splash-title" data-i18n="splash_title">Engineering</h1>
+            <h2 class="splash-subtitle" data-i18n="splash_subtitle">with Intent.</h2>
+
+            <!-- Glowing Domain Badge -->
+            <div class="splash-badge">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" class="badge-icon">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path
+                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                    </path>
+                </svg>
+                <span>portokudev.my.id</span>
+            </div>
+        </div>
+        <!-- Animated progress bar -->
+        <div class="splash-progress" aria-hidden="true"></div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="site-header" id="site-header">
+        <div class="header-container container">
+            <a href="#home" class="logo" id="logo-nav">
+                <img src="assets/images/logo.png" alt="portokudev logo" class="logo-img">
+            </a>
+
+            <!-- Theme Toggle Button -->
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle color mode">
+                <!-- Sun Icon (shown in dark mode) -->
+                <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <!-- Moon Icon (shown in light mode) -->
+                <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+
+            <!-- Language Toggle -->
+            <div class="lang-toggle" id="lang-toggle" role="group" aria-label="Select language"></div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Buka menu navigasi"
+                aria-expanded="false">
+                <span class="hamburger-bar bar-1"></span>
+                <span class="hamburger-bar bar-2"></span>
+                <span class="hamburger-bar bar-3"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="main-nav" id="main-nav" aria-hidden="true">
+                <!-- Nav Header row inside menu -->
+                <div class="mobile-nav-header">
+                    <img src="assets/images/logo.png" alt="portokudev" class="logo-img mobile-menu-logo">
+                    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Tutup menu">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+
+                <ul class="nav-list">
+                    <li class="nav-item" style="--i:0">
+                        <a href="#home" class="nav-link active" id="link-home">
+                            <span class="nav-num">01</span>
+                            <span class="nav-label" data-i18n="nav_home">Home</span>
+                            <svg class="nav-arrow" viewBox="0 0 24 24" width="16" height="16" fill="none"
+                                stroke="currentColor" stroke-width="1.5">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item" style="--i:1">
+                        <a href="#about" class="nav-link" id="link-about">
+                            <span class="nav-num">02</span>
+                            <span class="nav-label" data-i18n="nav_about">About</span>
+                            <svg class="nav-arrow" viewBox="0 0 24 24" width="16" height="16" fill="none"
+                                stroke="currentColor" stroke-width="1.5">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item" style="--i:2">
+                        <a href="#projects" class="nav-link" id="link-projects">
+                            <span class="nav-num">03</span>
+                            <span class="nav-label" data-i18n="nav_projects">Projects</span>
+                            <svg class="nav-arrow" viewBox="0 0 24 24" width="16" height="16" fill="none"
+                                stroke="currentColor" stroke-width="1.5">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item" style="--i:3">
+                        <a href="#contact" class="nav-link" id="link-contact">
+                            <span class="nav-num">04</span>
+                            <span class="nav-label" data-i18n="nav_contact">Contact</span>
+                            <svg class="nav-arrow" viewBox="0 0 24 24" width="16" height="16" fill="none"
+                                stroke="currentColor" stroke-width="1.5">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Bottom social strip -->
+                <div class="mobile-nav-footer">
+                    <a href="https://github.com/Cyberstarszs" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub" class="mobile-social-link">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://wa.me/6287759808899" target="_blank" rel="noopener noreferrer"
+                        aria-label="WhatsApp" class="mobile-social-link">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/x.shybb/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram" class="mobile-social-link">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                    <span class="mobile-nav-domain">portokudev.my.id</span>
+                </div>
+            </nav>
+
+            <!-- Backdrop overlay -->
+            <div class="nav-backdrop" id="nav-backdrop" aria-hidden="true"></div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <!-- Availability Status Badge -->
+                    <div class="ai-badge-wrapper fade-in-element">
+                        <span class="ai-badge">
+                            <span class="status-dot"></span>
+                            <span data-i18n="hero_badge">Open to New Projects</span>
+                        </span>
+                    </div>
+
+                    <!-- Main Heading -->
+                    <h1 class="hero-title">
+                        <span class="reveal-line"><span data-i18n="hero_h1_1">Precision Code.</span></span>
+                        <span class="reveal-line"><span data-i18n="hero_h1_2">Deliberate Design.</span></span>
+                    </h1>
+
+                    <!-- Tagline -->
+                    <p class="hero-tagline fade-in-element">
+                        <span data-i18n="hero_tagline">I build digital products that are fast, purposeful, and built to
+                            last — combining clean engineering with design systems that scale.</span>
+                    </p>
+
+                    <!-- Call To Actions -->
+                    <div class="hero-ctas fade-in-element">
+                        <a href="#projects" class="btn btn-primary magnetic" id="cta-view-projects">
+                            <span data-i18n="hero_cta_primary">View Selected Work</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary magnetic" id="cta-contact-me"><span
+                                data-i18n="hero_cta_secondary">Start a Project</span></a>
+                    </div>
+                </div>
+
+                <!-- Decorative Right Side (Editorial Grid element) -->
+                <div class="hero-visual-wrapper fade-in-element">
+                    <div class="hero-frame">
+                        <div class="frame-content">
+                            <span class="frame-text-top">EST. 2026</span>
+                            <div class="frame-center-media">
+                                <img src="assets/images/Animation1.gif" alt="AI & Creative Animation"
+                                    class="hero-animation-gif">
+                            </div>
+                            <span class="frame-text-bottom">CYBERSTARSZ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-divider container"></div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <span class="section-tag" id="tag-about" data-i18n="section_about_tag">01 / ABOUT</span>
+                <h2 class="section-title" id="title-about" data-i18n="section_about_title">The Mind Behind the Work</h2>
+
+                <div class="about-grid">
+                    <!-- Photo & Statistics column -->
+                    <div class="about-aside">
+                        <div class="profile-image-container">
+                            <img src="assets/images/profile.jpg" alt="Foto Profil Profesional" class="profile-image"
+                                id="profile-img" width="360" height="360" loading="lazy">
+                        </div>
+
+                        <!-- Metric Cards -->
+                        <div class="metrics-grid">
+                            <div class="metric-card">
+                                <span class="metric-number">3+</span>
+                                <span class="metric-label" data-i18n="metric_years">Years of Practice</span>
+                            </div>
+                            <div class="metric-card">
+                                <span class="metric-number">40+</span>
+                                <span class="metric-label" data-i18n="metric_projects">Projects Shipped</span>
+                            </div>
+                            <div class="metric-card">
+                                <span class="metric-number">15+</span>
+                                <span class="metric-label" data-i18n="metric_tech">Technologies Mastered</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bio & Skills column -->
+                    <div class="about-main">
+                        <div class="bio-text">
+                            <p data-i18n-html="bio_1">I'm a <strong>Software Engineer &amp; UI/UX Designer</strong> who
+                                builds digital products with a clear purpose — fast, scalable, and thoughtfully crafted.
+                                My work sits at the intersection of clean engineering and visual clarity, with a bias
+                                toward systems that hold up under real-world pressure.</p>
+                            <p data-i18n-html="bio_2">I work with an AI-augmented workflow that accelerates without
+                                cutting corners — pairing performance-first development (Core Web Vitals) with interface
+                                design that removes friction and earns trust from the first interaction.</p>
+                        </div>
+
+                        <!-- Skills Categorized -->
+                        <div class="skills-categories">
+                            <div class="skills-group">
+                                <h3 data-i18n="skills_frontend">Frontend Engineering</h3>
+                                <div class="skills-tags">
+                                    <span class="skill-tag">HTML5</span>
+                                    <span class="skill-tag">CSS3 (Grid/Flex)</span>
+                                    <span class="skill-tag">JavaScript (ES6+)</span>
+                                    <span class="skill-tag">Tailwind CSS</span>
+                                    <span class="skill-tag">React / Next.js</span>
+                                </div>
+                            </div>
+
+                            <div class="skills-group">
+                                <h3 data-i18n="skills_infra">Infrastructure & Tooling</h3>
+                                <div class="skills-tags">
+                                    <span class="skill-tag">Node.js</span>
+                                    <span class="skill-tag">PHP / XAMPP</span>
+                                    <span class="skill-tag">Git & GitHub</span>
+                                    <span class="skill-tag">REST API</span>
+                                </div>
+                            </div>
+
+                            <div class="skills-group">
+                                <h3 data-i18n="skills_design">Design & Visual Strategy</h3>
+                                <div class="skills-tags">
+                                    <span class="skill-tag">Figma</span>
+                                    <span class="skill-tag">Adobe Photoshop</span>
+                                    <span class="skill-tag">Typography System</span>
+                                    <span class="skill-tag">Wireframing</span>
+                                </div>
+                            </div>
+
+                            <div class="skills-group">
+                                <h3 data-i18n="skills_method">Methodology & Practice</h3>
+                                <div class="skills-tags">
+                                    <span class="skill-tag highlight-tag">Agile Development</span>
+                                    <span class="skill-tag highlight-tag">Modular & Scalable Design</span>
+                                    <span class="skill-tag highlight-tag">Performance Tuning (Core Web Vitals)</span>
+                                    <span class="skill-tag highlight-tag">Clean Code & Refactoring</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-divider container"></div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <span class="section-tag" id="tag-projects" data-i18n="section_projects_tag">02 / SELECTED WORK</span>
+                <h2 class="section-title" id="title-projects" data-i18n="section_projects_title">Selected Work</h2>
+
+                <!-- Category Filter Buttons -->
+                <div class="projects-filter-wrapper">
+                    <button class="filter-btn active" data-filter="all" id="filter-all" data-i18n="filter_all">All
+                        Projects</button>
+                    <button class="filter-btn" data-filter="webapp" id="filter-webapp" data-i18n="filter_webapp">Web
+                        App</button>
+                    <button class="filter-btn" data-filter="landing" id="filter-landing"
+                        data-i18n="filter_landing">Landing Page</button>
+                    <button class="filter-btn" data-filter="uiux" id="filter-uiux" data-i18n="filter_uiux">UI/UX
+                        Design</button>
+                </div>
+
+                <!-- Dynamic Projects Grid (populated by JS) -->
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Project cards will be injected by main.js -->
+                </div>
+            </div>
+
+            <div class="section-divider container"></div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <span class="section-tag" id="tag-contact" data-i18n="section_contact_tag">03 / CONTACT</span>
+                <h2 class="section-title" id="title-contact" data-i18n="section_contact_title">Let's Build Something.
+                </h2>
+
+                <div class="contact-grid">
+                    <!-- Contact Details / Info -->
+                    <div class="contact-info">
+                        <p class="contact-intro" data-i18n="contact_intro">Have a project in mind, or just want to talk
+                            through an idea? Reach out directly — I respond to every message personally.</p>
+
+                        <div class="direct-contacts">
+                            <div class="contact-item">
+                                <span class="contact-label" data-i18n="contact_label_email">Email</span>
+                                <a href="mailto:jashubpremium@gmail.com" class="contact-link" id="email-direct">
+                                    <svg class="contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                        <path d="M22 6l-10 7L2 6"></path>
+                                    </svg>
+                                    jashubpremium@gmail.com
+                                </a>
+                            </div>
+
+                            <div class="contact-item">
+                                <span class="contact-label" data-i18n="contact_label_wa">WhatsApp</span>
+                                <a href="https://wa.me/6287759808899" target="_blank" rel="noopener noreferrer"
+                                    class="contact-link" id="wa-direct">
+                                    <svg class="contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                                        </path>
+                                    </svg>
+                                    087759808899
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Social Media Links -->
+                        <div class="social-links-wrapper">
+                            <span class="social-title" data-i18n="social_title">ELSEWHERE</span>
+                            <div class="social-links">
+                                <a href="https://github.com/Cyberstarszs" target="_blank" rel="noopener noreferrer"
+                                    aria-label="GitHub" class="social-link magnetic" id="social-github">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a href="https://wa.me/6287759808899" target="_blank" rel="noopener noreferrer"
+                                    aria-label="WhatsApp" class="social-link magnetic" id="social-wa">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a href="https://www.instagram.com/x.shybb/" target="_blank" rel="noopener noreferrer"
+                                    aria-label="Instagram" class="social-link magnetic" id="social-instagram">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <form id="contact-form" class="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="name" class="form-label"><span data-i18n="form_label_name">Full Name</span>
+                                    <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" class="form-input"
+                                    data-i18n-placeholder="form_ph_name" placeholder="Your name" required>
+                                <span class="error-message" id="error-name" aria-live="polite"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label"><span
+                                        data-i18n="form_label_message">Message</span> <span
+                                        class="required">*</span></label>
+                                <textarea id="message" name="message" class="form-input form-textarea"
+                                    data-i18n-placeholder="form_ph_message"
+                                    placeholder="Tell me about your project, timeline, or idea..." required></textarea>
+                                <span class="error-message" id="error-message" aria-live="polite"></span>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-primary btn-submit" id="btn-submit-form">
+                                <span class="btn-text" data-i18n="form_submit">Send via WhatsApp</span>
+                                <span class="btn-loader hidden">
+                                    <svg class="spinner" width="20" height="20" viewBox="0 0 50 50">
+                                        <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5">
+                                        </circle>
+                                    </svg>
+                                </span>
+                            </button>
+
+                            <!-- Submit Status Toast/Banner -->
+                            <div id="form-status" class="form-status hidden" aria-live="polite"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#home" class="logo-footer">
+                    <img src="assets/images/logo.png" alt="portokudev logo" class="logo-img-footer">
+                </a>
+                <p data-i18n="footer_tagline">Purposeful engineering. Measurable outcomes.</p>
+            </div>
+
+            <div class="footer-nav">
+                <h4 data-i18n="footer_nav_title">Navigation</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="copyright-year">2026</span> portokudev. <span data-i18n="footer_copyright">All
+                        rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Detail Modal (Pop-up) -->
+    <div id="project-modal" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true"
+        aria-labelledby="modal-title">
+        <div class="modal-card">
+            <button class="modal-close-btn" id="modal-close-btn" aria-label="Tutup detail proyek">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="modal-body-content" id="modal-body-content">
+                <!-- Content will be injected dynamically from JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- i18n Engine (must load before main.js) -->
+    <script src="assets/js/i18n.js"></script>
+    <!-- Custom Script -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
